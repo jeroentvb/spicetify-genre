@@ -70,12 +70,12 @@
     */
    const inject = () => {
      Player.addEventListener('songchange', async () => {
-       if (Player.data?.track.metadata.hasOwnProperty('artist_uri')) {
+       if (Player.data?.item.metadata.hasOwnProperty('artist_uri')) {
          // If the registered song isn't the same as the one currently being played then fetch genres
          if (playback !== Player.data.playbackId) {
            // Save the new track
            playback = Player.data.playbackId;
-           const id = Player.data.track.metadata.artist_uri.split(':')[2];
+           const id = Player.data.item.metadata.artist_uri.split(':')[2];
            const genres = await fetchGenres(id);
  
            cleanInjection();
