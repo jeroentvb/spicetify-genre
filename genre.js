@@ -85,6 +85,7 @@
            genreContainer.className = 'main-trackInfo-genres ellipsis-one-line main-type-finale';
            // noinspection JSUnresolvedVariable
            genreContainer.style.color = 'var(--spice-extratext)';
+           genreContainer.style.gridArea = 'genre';
  
            for (const i in genres) {
              let element;
@@ -108,6 +109,11 @@
            }
  
            infoContainer = document.querySelector('div.main-trackInfo-container');
+           infoContainer.style.gridTemplateAreas = `
+           "pretitle pretitle"
+           "title title"
+           "badges subtitle"
+           "genre genre"`;
            if(!infoContainer) cleanInjection();
            infoContainer.appendChild(genreContainer);
  
