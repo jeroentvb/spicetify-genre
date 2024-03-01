@@ -1,0 +1,23 @@
+{
+  "name": "spicetify-genre",
+  "version": "1.0.0",
+  "description": "Fork of [https://github.com/Shinyhero36/Spicetify-Genre](https://github.com/Shinyhero36/Spicetify-Genre), containing a bug fix.",
+  "main": "genre.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeroentvb/spicetify-genre-fork.git"
+  },
+  "author": "jeroentvb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeroentvb/spicetify-genre-fork/issues"
+  },
+  "homepage": "https://github.com/jeroentvb/spicetify-genre-fork#readme",
+  "devDependencies": {
+    "@jeroentvb/eslint-config-typescript": "^1.3.2",
+    "eslint": "^8.57.0"
+  }
+}
